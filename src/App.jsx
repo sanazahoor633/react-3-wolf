@@ -4,41 +4,41 @@ import Dog from "./Components/Dog";
 import { Canvas } from "@react-three/fiber";
 
 const App = () => {
-  const items = [
-    {
-      smal: 208816,
-      h1Element: "Navy Pier..",
-    },
-    {
-      smal: 208816,
-      h1Element: "Navy Pier.....",
-    },
+  // const items = [
+  //   {
+  //     smal: 208816,
+  //     h1Element: "Navy Pier..",
+  //   },
+  //   {
+  //     smal: 208816,
+  //     h1Element: "Navy Pier.....",
+  //   },
 
-    {
-      smal: 299016,
-      h1Element: "Navyr",
-    },
-    {
-      smal: 201006,
-      h1Element: "Navy ",
-    },
-    {
-      smal: 2016,
-      h1Element: "Navy",
-    },
-    {
-      smal: 2010000,
-      h1Element: "Navy Pier",
-    },
-    {
-      smal: 2010006,
-      h1Element: "Navy Pier",
-    },
-    {
-      smal: 201006,
-      h1Element: "Navy Pier",
-    },
-  ];
+  //   {
+  //     smal: 299016,
+  //     h1Element: "Navyr",
+  //   },
+  //   {
+  //     smal: 201006,
+  //     h1Element: "Navy ",
+  //   },
+  //   {
+  //     smal: 2016,
+  //     h1Element: "Navy",
+  //   },
+  //   {
+  //     smal: 2010000,
+  //     h1Element: "Navy Pier",
+  //   },
+  //   {
+  //     smal: 2010006,
+  //     h1Element: "Navy Pier",
+  //   },
+  //   {
+  //     smal: 201006,
+  //     h1Element: "Navy Pier",
+  //   },
+  // ];
   return (
     <main>
       <div className="images">

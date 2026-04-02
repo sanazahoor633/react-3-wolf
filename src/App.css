@@ -205,3 +205,6 @@ main:has(#section-2 .title[image-title="louises"]:hover) .images #louises {
 main:has(#section-2 .title[image-title="revelator"]:hover) .images #revelator {
   opacity: 1;
 }
+#section-3 {
+  
+}
