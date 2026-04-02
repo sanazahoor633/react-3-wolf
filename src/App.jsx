@@ -194,12 +194,37 @@ const App = () => {
       </section>
       <section id="section-3">
         <div className="top">
-          <div className="left"></div>
+          <div className="left">
+            <h3>
+              Lorem ipsum dolor sit amet, <br /> consectetur adipisicing elit.{" "}
+              <br /> Commodi, sint id? Perferendis <br /> modi doloribus fugiat?
+            </h3>
+          </div>
           <div className="right"></div>
         </div>
-        <div className="bottom">
+       
+      </section>
+      <section id="section-4">
+ <div className="bottom">
           <div className="left"></div>
-          <div className="right"></div>
+          <div className="right">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum illo
+              porro itaque totam nemo, fugit quam laboriosam magnam nobis, quia
+              repellat nam tempore animi, error numquam rem consequatur. Facere
+              minus consequatur illo et. Illo ea, voluptas dolorum commodi
+              veritatis nemo ipsam, molestiae, sit recusandae reiciendis
+              consequatur? Reiciendis fuga totam neque!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              exercitationem assumenda repudiandae repellat mollitia voluptates
+              architecto minus minima, in dolores ex modi natus aspernatur iusto
+              id a omnis magnam nobis! Deserunt consequuntur aliquam placeat
+              omnis delectus reprehenderit, quam neque tempore itaque ex
+              repudiandae cumque quia id, magni sit, enim et!
+            </p>
+          </div>
         </div>
       </section>
     </main>

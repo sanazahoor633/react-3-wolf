@@ -206,5 +206,67 @@ main:has(#section-2 .title[image-title="revelator"]:hover) .images #revelator {
   opacity: 1;
 }
 #section-3 {
-  
+ padding-top: 10rem; 
+ padding-inline: 10rem;
+ position: relative;
+ min-height: initial;
+ /* background-color: green; */
+ z-index: 0;
+ top, .bottom {
+  display: flex;
+  width: 100%;
+  gap: 10rem;
+ }
+ .left, .right {
+  width: 50%;
+ }
+ .top .left {
+  padding-left: 4rem;
+  h3 {
+    font-size: 2rem;
+    font-weight: 100;
+    opacity: 0.6;
+   
+  }
+ }
+ .bottom .right {
+  display: flex;
+  gap: 1rem;
+  p {
+    opacity: 0.5;
+    font-weight: 200;
+  }
+ }
+
+}
+
+#section-4 { 
+  padding-top: 3rem;
+ padding-inline: 10rem;
+ top, .bottom {
+  display: flex;
+  width: 100%;
+  gap: 10rem;
+ }
+ .left, .right {
+  width: 50%;
+ }
+ .top .left {
+  padding-left: 4rem;
+  h3 {
+    font-size: 2rem;
+    font-weight: 100;
+    opacity: 0.6;
+   
+  }
+ }
+ .bottom .right {
+  display: flex;
+  gap: 1rem;
+  p {
+    opacity: 0.5;
+    font-weight: 200;
+  }
+ }
+
 }
