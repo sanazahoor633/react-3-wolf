@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  /* height: 100%; */
+  width: 100%;
+  background-color: black;
+  color: azure;
+}
+section {
+  min-height: 100vh;
+  /* border: 2px solid white; */
+  z-index: 2;
+  position: relative;
+}
+main {
+  position: relative;
+}
+#canvas-elem::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url(/background-l.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s linear;
+}
+#section-1 {
+  --gap: 5rem;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    padding-top: 3.5rem;
+    h5 {
+      font-size: 0.9rem;
+    }
+    .nav-elem:nth-child(2) {
+      i {
+        color: red;
+        font-size: 1rem;
+      }
+    }
+    svg {
+      height: 100%;
+      width: 100%;
+      max-width: 10rem;
+    }
+  }
+  .middle {
+    display: flex;
+    gap: var(--gap);
+    .left,
+    .right {
+      width: 50%;
+    }
+    .left {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-block: 7rem;
+
+      h1 {
+        font-size: 5rem;
+        line-height: 0.8;
+        text-align: right;
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    gap: var(--gap);
+    .left,
+    .right {
+      width: 50%;
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .p1 {
+        font-size: 1.3rem;
+        line-height: 1.8;
+        font-weight: 300;
+      }
+      .p2 {
+        color: rgba(160, 168, 220, 0.7);
+        line-height: 1.4;
+        font-size: 1rem;
+      }
+      ul {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: whitesmoke;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  .first-line {
+    width: 35rem;
+    background-color: rgba(255, 0, 0, 0.46);
+    height: 1px;
+    position: absolute;
+    transform: rotate(45deg) translate(-20rem, -25rem);
+  }
+  .second-line {
+    width: 10rem;
+    background-color: rgba(255, 0, 0, 0.46);
+    height: 1px;
+    position: absolute;
+    transform: rotate(-45deg) translate(70rem, 10rem);
+  }
+}
+#section-2 {
+  .titles {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 5rem;
+    margin-block: 5rem;
+    .title {
+      display: flex;
+      gap: 4rem;
+      opacity: 0.3;
+      padding-block: 1rem;
+      padding-left: 2rem;
+      transition: all 0.3s ease-in-out;
+      h1 {
+        font-size: 4rem;
+        font-weight: 100;
+        line-height: 1;
+      }
+      small {
+        margin-top: 0.7rem;
+      }
+    }
+    .title:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}
+main:has(#section-2 .title:hover) #canvas-elem::after {
+  opacity: 0;
+}
+.images {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+}
+main:has(#section-2 .title[image-title="tomorrow"]:hover) .images #tomorrow {
+  opacity: 1;
+}
+main:has(#section-2 .title[image-title="navy"]:hover) .images #navy {
+  opacity: 1;
+}
+main:has(#section-2 .title[image-title="chicago"]:hover) .images #chicago {
+  opacity: 1;
+}
+main:has(#section-2 .title[image-title="opera"]:hover) .images #opera {
+  opacity: 1;
+  background-color: red;
+}
+main:has(#section-2 .title[image-title="festival"]:hover) .images #festival {
+  opacity: 1;
+  background-color: rgba(0, 0, 255, 0.37);
+}
+
+main:has(#section-2 .title[image-title="kennedy"]:hover) .images #kennedy {
+  opacity: 1;
+}
+main:has(#section-2 .title[image-title="bouguessa"]:hover) .images #bouguessa {
+  opacity: 1;
+}
+
+main:has(#section-2 .title[image-title="louises"]:hover) .images #louises {
+  opacity: 1;
+}
+
+main:has(#section-2 .title[image-title="revelator"]:hover) .images #revelator {
+  opacity: 1;
+}
